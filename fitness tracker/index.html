@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zing Coach 🦁</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Fit jounery</h1>
+
+    
+    <div class="card">
+        <h2>Your Details</h2>
+
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="targetWeight" placeholder="Target Weight (kg)">
+
+        <button onclick="calculatePlan()">Generate Plan</button>
+
+        <div id="result"></div>
+        <div id="badge"></div>
+    </div>
+
+  
+    <div class="card steps-card">
+        <h2>
+            📊 Daily Steps
+            <button class="mode-btn" onclick="toggleMode()">🌙</button>
+        </h2>
+
+        <input type="number" id="stepsInput" placeholder="Enter today's steps">
+        <button onclick="addSteps()">Add Steps</button>
+
+        <canvas id="stepsChart"></canvas>
+    </div>
+
+    
+    <div class="card">
+        <h2>🧠 Motivation</h2>
+        <p id="motivationText">Enter steps and dominate 🦁</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
